@@ -34,7 +34,6 @@ class mayaprefixreplacer:
         prefix=cmds.textField(self.prefix, query=True, text=1)
         replace=cmds.textField(self.replace, query=True, text=1)
         selection=cmds.ls((prefix+"*"), selection=True)
-        #print(selection)
         for object in selection:
             newname=object.replace(prefix, replace)
             cmds.rename(object, newname)
