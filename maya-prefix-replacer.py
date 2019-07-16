@@ -2,7 +2,7 @@
 
 import maya.cmds as cmds
 
-height = 150
+height = 100
 width = 200
 
 class mayaprefixreplacer:
@@ -16,7 +16,7 @@ class mayaprefixreplacer:
             cmds.deleteUI(self.window, window=True)
 
         self.window = cmds.window(self.window, title=self.title, widthHeight=self.size)
-        self.mainForm = cmds.formLayout(numberOfDivisions=100)
+        #self.mainForm = cmds.formLayout(numberOfDivisions=100)
         cmds.rowColumnLayout(width=width)
         cmds.text(label="Prefix Replacer", font="boldLabelFont")
         cmds.text(label="A script to replace a prefix of any \n object within the scene.")
