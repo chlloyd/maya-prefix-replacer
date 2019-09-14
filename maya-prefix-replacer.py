@@ -26,7 +26,7 @@ class mayaprefixreplacer:
         cmds.text(label="Replace With")
         self.replace = cmds.textField("replace")
         cmds.rowColumnLayout(numberOfColumns=1, width=width)
-        cmds.button("Remove", command=self.removeBtn)
+        cmds.button("Replace", command=self.removeBtn)
         cmds.rowColumnLayout(width=width)
         cmds.showWindow()
 
